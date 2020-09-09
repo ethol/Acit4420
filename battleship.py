@@ -12,8 +12,8 @@ def print_board(unmask=False):
         s = str(i + 1)
         for j in range(SizeX):
             s2 = " "
-            if board[i][j] == 1: s2 = "*"
             if board[i][j] == 2: s2 = "+"
+            if board[i][j] == 1: s2 = "*"
             if mask[i][j] == True and not unmask: s2 = " "
             s += s2
         print(s)
